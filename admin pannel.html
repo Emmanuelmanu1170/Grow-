@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Gigantic Digital Parnell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="order.html">Place Order</a>
+    <a href="my-orders.html">My Orders</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="admin.html">Admin</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <div class="container">
+    <h2>Customer Orders</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Customer</th>
+          <th>Platform</th>
+          <th>Service</th>
+          <th>Quantity</th>
+          <th>Link</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-08-05</td>
+          <td>Emmanuel</td>
+          <td>TikTok</td>
+          <td>Followers</td>
+          <td>1000</td>
+          <td><a href="#">View</a></td>
+          <td><span class="status-pending">Pending</span></td>
+          <td><button onclick="markComplete(this)">Mark Completed</button></td>
+        </tr>
+        <tr>
+          <td>2025-08-04</td>
+          <td>Sarah</td>
+          <td>YouTube</td>
+          <td>Watch Time</td>
+          <td>4000</td>
+          <td><a href="#">View</a></td>
+          <td><span class="status-completed">Completed</span></td>
+          <td><button disabled>Completed</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Gigantic Digital Parnell | Kumasi, Ghana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
